@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <meta
+      name="description"
+      content="Sneaker Company is an E-commerce company that produces amazing footwears for your comfort. It is durable and awesomely cheap"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+
+    <script defer src="app.js"></script>
+
+    <title>Frontend Mentor | E-commerce | Pleasantvik</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header container">
+      <div class="logo-box">
+        <button class="btn-mobile-nav">
+          <img
+            class="icon-mobile-nav icon-menu"
+            src="images/icon-menu.svg"
+            alt="Menu Icon"
+          />
+        </button>
+        <div class="logo-img">
+          <img src="images/logo.svg" alt="Logo" class="logo" />
+        </div>
+
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <img
+              class="icon-mobile-nav icon-close"
+              src="images/icon-close.svg"
+              alt="cross Icon"
+            />
+            <li><a href="#" class="nav-link">Collection</a></li>
+            <li><a href="#" class="nav-link">Men</a></li>
+            <li><a href="#" class="nav-link">Women</a></li>
+            <li><a href="#" class="nav-link">About</a></li>
+            <li><a href="#" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="cart-box">
+        <div class="cart-icon">
+          <img src="images/icon-cart.svg" alt="Cart" class="cart" />
+          <span class="cart-item card-item--active">5</span>
+        </div>
+        <div class="cart-image">
+          <img class="img" src="images/image-avatar.png" alt="Person Image" />
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <div class="container__cart container__cart--activ">
+        <div class="container__cart__title">
+          <h3 class="heading-ter">Cart</h3>
+        </div>
+        <div class="container__cart__info">
+          <p class="p">Your cart is empty</p>
+        </div>
+        <button class="container__cart__button checkout hidden">
+          Checkout
+        </button>
+      </div>
+      <div class="grid">
+        <div class="slider">
+          <div class="slide slide-1">
+            <img
+              class="slide-image"
+              src="images/image-product-1.jpg"
+              alt="Product Image 1"
+            />
+          </div>
+          <div class="slide slide-2">
+            <img
+              class="slide-image"
+              src="images/image-product-2.jpg"
+              alt="Product Image 1"
+            />
+          </div>
+          <div class="slide slide-3">
+            <img
+              class="slide-image"
+              src="images/image-product-3.jpg"
+              alt="Product Image 1"
+            />
+          </div>
+          <div class="slide slide-4">
+            <img
+              class="slide-image"
+              src="images/image-product-4.jpg"
+              alt="Product Image 1"
+            />
+          </div>
+          <button class="slide-btn btn-left">&larr;</button>
+          <button class="slide-btn btn-right">&rarr;</button>
+        </div>
+        <div class="dots"></div>
+        <div class="content">
+          <h3 class="heading-sec">Sneaker Company</h3>
+          <h1 class="heading-pry">
+            Fall limited edition <br />
+            sneakers
+          </h1>
+          <p class="p">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+          <p class="price mb-sm">
+            <strong>$125.00</strong> <span class="off">50%</span>
+          </p>
+          <p class="price-2 mb-sm">$250.00</p>
+
+          <div class="btn-container">
+            <div class="btn--add">
+              <button class="btn cta">
+                <img
+                  id="decrement"
+                  src="images/icon-minus.svg"
+                  alt="Icon minus"
+                />
+                <span class="info__total__add info">0</span>
+                <img
+                  id="increment"
+                  src="images/icon-plus.svg"
+                  alt="Icon plus"
+                />
+              </button>
+            </div>
+            <button class="btn add--cart">
+              <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                  fill="#FFFFFF"
+                  fill-rule="nonzero"
+                />
+              </svg>
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <div class="carousel-container">
+        <div class="carousel carousel-1">
+          <img
+            class="carousel-image"
+            src="images/image-product-1.jpg"
+            alt="Product Image 1"
+          />
+        </div>
+        <div class="carousel carousel-2">
+          <img
+            class="carousel-image"
+            src="images/image-product-2.jpg"
+            alt="Product Image 1"
+          />
+        </div>
+        <div class="carousel carousel-3">
+          <img
+            class="carousel-image"
+            src="images/image-product-3.jpg"
+            alt="Product Image 1"
+          />
+        </div>
+        <div class="carousel carousel-4">
+          <img
+            class="carousel-image"
+            src="images/image-product-4.jpg"
+            alt="Product Image 1"
+          />
+        </div>
+      </div>
+      <button class="carousel-btn carousel-btn-left">&larr;</button>
+      <button class="carousel-btn carousel-btn-right">&rarr;</button>
+      <div class="thumbnail"></div>
+    </section>
+    <div class="overlay hidden"></div>
+
+    <footer class="attribution footer">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Adedayo Ayoola</a>.
+    </footer>
+  </body>
+</html>
